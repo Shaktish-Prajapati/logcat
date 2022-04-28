@@ -177,13 +177,13 @@ export default function Alarm(props) {
 
   //   FIRST TIME ALARM ACTION DISPATCH
   useEffect(() => {
-    console.log("projectCode", projectCode);
+    console.log('alarm error alarm useeffect ', projectCode )
     dispatch(alarmAction(projectCode, diffDate));
   }, [dispatch, projectCode, diffDate]);
 
   // HANDLE PAGE CLICK
   const handlePageClick = (data) => {
-    console.log("pagination");
+    console.log('alarm error alarm handle page click ', projectCode )
     return dispatch(
       alarmAction(projectCode, diffDate, data.selected + 1, record)
     );
@@ -217,6 +217,7 @@ export default function Alarm(props) {
                   tableDataState={tableDataState}
                   diffDate={diffDate}
                   codeReducer={getModelCodeReducer}
+                  setProjectCode = {setProjectCode}
                 />
               </Col>
 

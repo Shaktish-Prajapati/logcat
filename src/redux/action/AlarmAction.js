@@ -10,6 +10,7 @@ export const alarmAction =
   async (dispatch) => {
     try {
       // console.log("qqq", projectType, diffdate);
+      console.log('alarm error alarm action ', projectType, diffdate)
       let date = new Date();
       let endDate = date.toLocaleDateString();
       endDate =
